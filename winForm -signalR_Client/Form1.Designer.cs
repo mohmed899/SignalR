@@ -41,14 +41,14 @@
             // 
             // TxtName
             // 
-            this.TxtName.Location = new System.Drawing.Point(114, 144);
+            this.TxtName.Location = new System.Drawing.Point(114, 178);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(149, 23);
             this.TxtName.TabIndex = 0;
             // 
             // TxtJob
             // 
-            this.TxtJob.Location = new System.Drawing.Point(114, 185);
+            this.TxtJob.Location = new System.Drawing.Point(114, 219);
             this.TxtJob.Name = "TxtJob";
             this.TxtJob.Size = new System.Drawing.Size(149, 23);
             this.TxtJob.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(511, 29);
+            this.label1.Location = new System.Drawing.Point(445, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 25);
             this.label1.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(27, 142);
+            this.label2.Location = new System.Drawing.Point(27, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 21);
             this.label2.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(51, 25);
+            this.label3.Location = new System.Drawing.Point(47, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(175, 30);
             this.label3.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(27, 187);
+            this.label4.Location = new System.Drawing.Point(27, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 21);
             this.label4.TabIndex = 5;
@@ -96,15 +96,15 @@
             // DGV_Emp
             // 
             this.DGV_Emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Emp.Location = new System.Drawing.Point(397, 122);
+            this.DGV_Emp.Location = new System.Drawing.Point(322, 176);
             this.DGV_Emp.Name = "DGV_Emp";
             this.DGV_Emp.RowTemplate.Height = 25;
-            this.DGV_Emp.Size = new System.Drawing.Size(391, 169);
+            this.DGV_Emp.Size = new System.Drawing.Size(391, 262);
             this.DGV_Emp.TabIndex = 6;
             // 
             // AddBtn
             // 
-            this.AddBtn.Location = new System.Drawing.Point(141, 258);
+            this.AddBtn.Location = new System.Drawing.Point(141, 292);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(75, 23);
             this.AddBtn.TabIndex = 7;

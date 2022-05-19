@@ -19,15 +19,21 @@ namespace SignalR.Controllers
             db = context;
         }
 
-        // GET: Employees
+        // GET: Employees MVC
         public  IActionResult Index()
         {
             return View(db.getAll());
 
         }
 
-        
-        
+        //Get emloyee API 
+        public IActionResult getEmplyee()
+        {
+            return Json(db.getAll());
+
+        }
+
+
         public IActionResult Create()
         {
             return View();

@@ -14,20 +14,31 @@ namespace winForm__signalR_Client
         private void Form1_Load(object sender, EventArgs e)
         {
                 // create connection 
-                con  = new HubConnectionBuilder().WithUrl("http://localhost:5093/EmpHub").Build();
+                con  = new HubConnectionBuilder().WithUrl("http://localhost:5050/EmpHub").Build();
 
                // stablish the connection 
                 con.StartAsync();
 
 
-            //subscrib 
+            //invoke get all emps 
+              con.InvokeAsync("getEmployees");
 
+            //subscrib  get new emp 
             con.On<Employee>("NewEmp", (emp) =>
             {
                 employees.Add(emp);
+
+                DGV_Emp.DataSource = null;
                 DGV_Emp.DataSource= employees;
             });
-          
+
+            // get all emps on load
+            con.On<List<Employee>>("GetAllEmployee", (emps) =>
+            {
+                employees = emps;
+                DGV_Emp.DataSource = null;
+                DGV_Emp.DataSource = emps;
+            }); 
 
         }
 
@@ -37,6 +48,8 @@ namespace winForm__signalR_Client
         }
 
 
+
+        //void GetEmplye
 
     }
 }

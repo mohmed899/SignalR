@@ -15,5 +15,10 @@ namespace SignalR.MyHub
             db.addEmployee(emp);
             Clients.All.SendAsync("NewEmp", emp);
         }
+
+        public void getEmployees()
+        {
+            Clients.All.SendAsync("GetAllEmployee", db.getAll());
+        }
     }
 }
