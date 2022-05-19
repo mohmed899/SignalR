@@ -1,0 +1,38 @@
+﻿@model List<SignalR.Models.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Name
+            </th>
+            <th>
+                Job
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.job)
+            </td>
+          
+        </tr>
+}
+    </tbody>
+</table>
+@section Scripts{
+<script src="~/js/List.js" ></script>
+}
